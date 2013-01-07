@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie ie9"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>KH digital capabilities demo</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="modernizr.custom.97074.js"></script>
+	</head>
+	<body>
+	<div id="home">
+	<div id="content_wrap">
+		<ul id="container" class="container">
+			<!--
+			<div id="about">
+				<a id="link-about" href="#about">about us</a>
+			</div>
+			-->
+			<p class="slide"><a href="#" id="logo" class="btn_slide"><img src="img/karsh_hagan_logo.png" /></a></p>
+			<li class="square crew">
+					<a id="link-crew" href="#crew">
+					<div class="title"><span>American Crew</span><br />Stylist Experience</div>
+					</a>
+			</li>
+			<li class="square denver">
+					<a id="link-denver" href="#denver">
+					<div class="title"><span>Visit Denver</span><br />Truth or Dare tourism</div>
+					</a>
+			</li>
+			<li class="square portico">
+					<a id="link-portico" href="#portico">
+					<div class="title"><span>Portico Club</span><br />Product Launch</div>
+					</a>
+			</li>
+			<li class="square assurance">
+					<a id="link-assurance" href="#assurance">
+					<div class="title"><span>Pinnacol Assurance</span><br />Web Presence Overhaul</div>
+					</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<!-- END HOMEPAGE -->
+	<!-- Crew -->
+		<div id="crew" class="panel">
+			<div class="content">
+				<h2>Crew</h2>
+				<p>American Crew stuff</p><br />
+				<div class="video">
+					<iframe src="http://player.vimeo.com/video/39896071?title=0&amp;byline=0&amp;portrait=0" width="1000" height="562" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br />
+				</div>
+				<a id="link-home" href="#home" class="back">back</a>
+			</div>
+		</div>
+		<!-- End Crew -->
+		
+		<!-- Visit Denver -->
+		<div id="denver" class="panel">
+			<div class="content">
+				<h2>Denver</h2>
+				<p>Visit Denver stuff</p><br />
+				<a id="link-home" href="#home" class="back">back</a>
+			</div>
+		</div>
+		<!-- End Denver -->
+		
+		<!-- Portico -->
+		<div id="portico" class="panel">
+			<div class="content">
+				<h2>Portico</h2>
+				<p>Portico Club stuff</p><br />
+				<a id="link-home" href="#home" class="back">back</a>
+			</div>
+		</div>
+		<!-- End Portico -->
+		<!-- PA -->
+		<div id="assurance" class="panel">
+			<div class="content">
+				<h2>Assurance</h2>
+				<p>Pinnacol Assurance stuff</p><br />
+				<a id="link-home" href="#home" class="back">back</a>
+			</div>
+		</div>
+		<!-- END  PA -->
+		<!-- About -->
+		<div id="assurance" class="panel">
+			<div class="content">
+				<h2>Assurance</h2>
+				<p>Pinnacol Assurance stuff</p><br />
+				<a id="link-home" href="#home" class="back">back</a>
+			</div>
+		</div>
+		<!-- End About -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="hover.js"></script>	
+		<script type="text/javascript">
+			$(function() {
+			
+				$(' #container > li.square ').each( function() { $(this).hoverdir(); } );
+
+			});
+		</script>
+		<script type="text/javascript">
+			$(function slide() {
+				
+	  				$("#about").slideToggle("slow");
+	  				$(this).toggleClass("active"); 
+	  				return false;
+	
+					$(".btn-slide").hover(slide, slide);
+				});
+		</script>
+	</body>
+</html>

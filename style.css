@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('font/league_gothic-webfont.eot');
+    src: url('font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/league_gothic-webfont.woff') format('woff'),
+         url('font/league_gothic-webfont.ttf') format('truetype'),
+         url('font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+#content_wrap {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	top: 0;
+	list-style: none;
+	padding: 0;
+}
+#logo {
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.container li.square {
+	width: 50%;
+	height: 50%;
+	margin: 0;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+.container li.square a {
+	overflow: hidden;
+	display: block;
+	height: 100%;
+	position: relative;
+	color: #333;
+	font-size: 18px;
+}
+.container li.square a .title {
+    position: absolute;
+    background: rgba(255,255,255,0.7);
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    left: 100%;
+}
+.container li.square a .title span {
+	display: block;
+	margin-top: 100px;
+	font-size: 36px;
+	border-bottom: 1px solid #999;
+	font-family: 'LeagueGothicRegular';
+	text-transform: uppercase;
+}
+.crew {
+	background: url(img/crew_bg.jpg) no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.denver {
+	background: url(img/denver_bg.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+}
+.portico {
+	background: url(img/portico_bg.jpg) no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.assurance {
+	background: url(img/assurance_bg.jpg) no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+@media only screen and (max-width: 480px) {
+	li.square {
+		width: 100%;
+	}
+}
+
+/* SLIDING PANEL STYLES */
+
+.content{
+	display: block;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding-bottom: 30px;
+}
+.content h2{
+	font-size: 36px;
+	font-family: 'LeagueGothicRegular';
+	padding: 10px 0px 0px 0px;
+	margin-top: 22px;
+	color: #fff;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.content p{
+	font-size: 18px;
+	padding: 10px;
+	line-height: 24px;
+	color: #fff;
+	display: inline-block;
+	background: black;
+	padding: 10px;
+	margin: 3px 0px;
+	margin-bottom: 15px;
+}
+a.back {
+	color: #333;
+	text-decoration: none;
+	font-family: 'LeagueGothicRegular';
+	font-size: 24px;
+	background: #fff;
+	padding: 5px 15px;
+	margin-top: 15px;
+	border-radius: 5px;
+	display: inline-block;
+	
+}
+.panel{
+	width: 98%;
+	min-height: 100%;
+	position: absolute;
+	background-color: #000;
+	box-shadow: 4px -4px 4px rgba(0,0,0,0.2);
+	margin-left: -102%;
+	z-index:2;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
+.panel:target{
+	margin-left: 0%;
+	background-color: #333;
+}
+#home:target ~ #link-home,
+#crew:target ~ #link-crew,
+#denver:target ~ #link-denver,
+#assurance:target ~ #link-assurance,
+#about:target ~ #link-about,
+#portico:target ~ #link-portico{
+	background: #000;
+	color: #fff;
+}
+#about {
+	background: #999;
+	height: 70px;
+	display: none;
+	position: absolute;
+	width: 137px;
+	z-index: 999;
+}
+.slide {
+	margin: 0;
+	padding: 0;
+	left: 0;
+	position: absolute;
+	z-index: 99999;
+}
+.btn-slide {
+	text-align: center;
+	width: 137px;
+	height: 27px;
+	margin: 0 auto;
+	display: block;
+	text-decoration: none;
+}
+.active {
+	background-position: right 12px;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video iframe,  
+.video object,  
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
